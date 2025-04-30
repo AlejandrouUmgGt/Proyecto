@@ -1,0 +1,90 @@
+:root {
+    --color1: #040404;
+    --color2: #8A3F7F;
+    --color3: #F4F4F4;
+}
+body {
+    background-color: var(--color1);
+    margin: 0;
+    padding: 20px;
+}
+header,legend {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 20px;
+    color: var(--color3);
+}
+
+header {
+    background: linear-gradient(45deg, #0290ff, #37ae5f);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+fieldset {
+    text-align: left;
+    margin: 20px 0;
+    background: var(--color3);
+    border-radius: 25px;
+}
+
+legend {
+    font-size: 2em;
+    background: linear-gradient(45deg, #52b3ff, #64ce87);
+    padding: 15px 25px;
+}
+
+#historia {}
+
+#niñez {}
+
+#adolencia {}
+
+#personal {}
+
+#academico {}
+
+#metas {}
+
+#patologias {}
+
+#deportes section{
+    display: flex;
+    justify-content: center;
+}
+#deportes ul{
+    font-size: 150%;
+}
+#deportes li{
+    color: var(--color1);
+    font-family: "Pangolin", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#loquemegusta {}
+
+#loquenomegusta{}
+
+#admision {}
+
+.Fotos_y_videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Crea un grid responsivo */
+    gap: 10px;
+}
+
+img, video{
+    width: 100%;
+    height: auto    ;
+    border-radius: 8px;
+}
+
+img:hover {
+    transform: scale(200%);
+}
+
+video:hover {
+    transform: scale(200%);
+}
