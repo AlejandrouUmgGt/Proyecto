@@ -1,0 +1,8 @@
+main p{
+    font-weight: 400;
+    color: var(--color2);
+    text-align: justify;
+}
+main span{
+    color: var(--color7);
+}

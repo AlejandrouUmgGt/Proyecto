@@ -1,0 +1,33 @@
+main fieldset{
+    border: var(--color4) solid 10px;
+    display: flex;
+    align-items: flex-start;
+}
+main legend{
+    padding: 1rem;
+    background-color: var(--color3);
+    font-size: 4rem;
+    color: var(--color2);
+}
+main div.text {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+}
+main h2{
+    color: var(--color2);
+    padding-left: 3rem;
+}
+main strong{
+    font-size: 1.5rem;
+    color: var(--color8);
+}
+main p{
+    padding-left: 7rem;
+    color: var(--color2);
+}
+main ul{
+    padding-left: 12rem;
+}
+main div.imagen{
+    max-width: 15%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: 15%; /* Mantiene la relación de aspecto */
+}

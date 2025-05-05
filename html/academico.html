@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Cambia el icono en la ventana -->
+    <link rel="icon" href="../img/torre-de-pc.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Manda a llamar fuentes externas de Google Fonts se carguen de manera optimizada y rápida para ser usadas en tu sitio web.-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bytesized&family=Pangolin&family=Silkscreen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css"><!-- Manda a llamar la hoja de estilos -->
-    <title>Proyecto</title>
+    <!-- Manda a llamar la hoja de estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/academico.css">
+    <title>Academico</title>
 </head>
 <body>
 <header>
-    <a href="../index.html"><h1>AUTOBIOGRAFIA</h1></a>
+    <a href="../index.html">AUTOBIOGRAFIA</a>
 </header>
 <div class="subtitulo"> <!-- Manda a llamar la clase subtitlo del archivo css -->
     <nav class="navegador contenedor"> <!-- Manda a llamar la clase navegador y su sub clase contenedor del archivo css -->
@@ -28,10 +32,47 @@
     </nav>
 </div>
 <main class="contenedor sombra"> <!-- Manda a llamar la clase contenedor y la sub clase sombra del archivo css -->
-    <legend>Primaria</legend>
-    <p>Hola</p>
-    <il>hola</il>
-
+    <fieldset>
+        <legend>Estudios actuales</legend>
+        <div class="texto">
+            <h2>Universidad Mariano Gálvez de Guatemala <strong>2025 - actualidad</strong></h2>
+            <p>Estudios de ingenieria en sistemas de computacion</p>
+            <p>Cursando el primer semestre llevando los cursos de:</p>
+            <ul>
+                <li>INTRODUCCIÓN A LOS SISTEMAS DE CÓMPUTO</li>
+                <li>LÓGICA DE SISTEMAS</li>
+                <li>CONTABILIDAD I</li>
+                <li>METODOLOGÍA DE LA INVESTIGACIÓN</li>
+                <li>FACULTAD INGENIERIA EN SISTEMAS, CURSO DESARROLLO HUMANO Y PROFESIONAL</li>
+            </ul>
+            <br>
+            <p>Pagina de la <a href="https://umg.edu.gt">Universidad Mariano Gálvez de Guatemala</a></p>
+        </div>
+        <div class="imagen">
+            <img src="https://umg.edu.gt/img/Umg.png" alt="umg">
+        </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Estudios actuales</legend>
+        <div class="texto">
+        <h2>Instituto Tecnologico de Computacion ITC <strong>2022 - 2020</strong></h2>>
+            <p>Estudios de ingenieria en sistemas de computacion</p>
+            <p>Cursando el primer semestre llevando los cursos de:</p>
+            <ul>
+                <li>INTRODUCCIÓN A LOS SISTEMAS DE CÓMPUTO</li>
+                <li>LÓGICA DE SISTEMAS</li>
+                <li>CONTABILIDAD I</li>
+                <li>METODOLOGÍA DE LA INVESTIGACIÓN</li>
+                <li>FACULTAD INGENIERIA EN SISTEMAS, CURSO DESARROLLO HUMANO Y PROFESIONAL</li>
+            </ul>
+        <br>
+        <p>Pagina de la <a href="https://itc.edu.gt">Instituto Tecnologico de Computacion ITC</a></p>
+        </div>
+        <div class="imagen">
+            <img src="https://itc.edu.gt/wp-content/uploads/2024/05/web-itc-21-768x234.png" alt="ITC">
+        </div>
+        </fieldset>
 </main>
 <footer class="footer"> <!-- Manda a llamar la clase footer del archivo css -->
     <p>Diego Alejandro Vásquez Yol</p>
