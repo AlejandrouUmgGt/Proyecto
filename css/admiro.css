@@ -1,0 +1,12 @@
+main{
+    text-align: justify;
+}
+h1{
+    color: var(--color7);
+}
+a{
+    text-decoration: none;
+}
+strong{
+    color: var(--color8);
+}
