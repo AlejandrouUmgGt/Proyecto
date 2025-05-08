@@ -28,7 +28,14 @@ body {
 *, *:before, *:after {
     box-sizing: inherit; /* Hereda el box-sizing del elemento html */
 }
-
+/* Define estilos para pantallas más anchas */
+@media (min-width: 768px) {
+    .anclar {
+        position: sticky; /* Permite que el elemento se quede "pegado" */
+        top: 0;           /* Posición desde la parte superior */
+        z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+    }
+}
 /* Formato para los elementos en el header */
 header a, header p {
     display: block; /* Hace que los enlaces y párrafos ocupen el ancho completo */
