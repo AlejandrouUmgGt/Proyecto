@@ -1,0 +1,15 @@
+p.nota{
+    color: var(--color5);
+}
+div.pagina{
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    align-items: center; /* Alinea verticalmente al centro */
+    gap: 5rem;
+}
+img{
+    width: auto;
+    height: 7rem;
+}
+p.porque{
+    padding-left: 3rem;
+}
