@@ -1,125 +1,112 @@
-/* Variables globales para todos los archivos*/
+/* Variables globales para todos los archivos */
 :root {
-    --color1: #f0f0f0;
-    --color2: #212121;
-    --color3: #FFC107;
-    --color4: #0097A7;
-    --color5: #757575;
-    --color6: #DFE9F3;
-    --color7: #FFA500;
-    --color8: #4CAF50;
-    --color9: #26A69A;
-}
-/* stablecen un tamaño de fuente base para facilitar el uso de unidades rem */
-html {
-    font-size: 62.5%;
-    box-sizing: border-box; /* Hack para Box Model */
-    scroll-snap-type: y mandatory;
-}
-/*  utiliza para definir el estilo visual del cuerpo del documento,
-    incluyendo el tamaño y tipo de fuente, así como un fondo degradado
-    que cambia de color de abajo hacia arriba. */
-body {
-    font-size: 2rem;
-    font-family: "Pangolin", cursive;
-    background: linear-gradient(to top, var(--color6) 0%, var(--color1) 100% );
-}
-/* asegura que todos los elementos tengan un comportamiento uniforme. */
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-/* Le da formato a la tiqueta a */
-header a, header p{
-    display: block;
-    text-align: center;
-    color: var(--color2);
-    text-decoration: none; /* Quita lo subrallado */
-    font-size: 4rem;
-    font-weight: 700; /* Para que el texto sea más grueso. */
-    padding: 1rem;
-}
-/* Cambia de color de letra y fondo al momento de pasar el cursor */
-header a:hover{
-    color: var(--color3);
-}
-/* Navegacion Principal */
-/*  Le da color al fondo */
-.subtitulo {
-    background-color: var(--color4);
+    --color1: #f0f0f0; /* Color de fondo claro */
+    --color2: #212121; /* Color de texto oscuro */
+    --color3: #FFC107; /* Color amarillo */
+    --color4: #0097A7; /* Color azul oscuro */
+    --color5: #757575; /* Color gris */
+    --color6: #DFE9F3; /* Color de fondo muy claro */
+    --color7: #FFA500; /* Color naranja */
+    --color8: #4CAF50; /* Color verde */
+    --color9: #26A69A; /* Color verde azulado */
 }
 
-/*  facilita la alineación y distribución vertical de esos elementos. */
-.navegador {
-    display: flex;
-    flex-direction: column;
+/* Establece un tamaño de fuente base para facilitar el uso de unidades rem */
+html {
+    font-size: 62.5%; /* 1rem equivale a 10px */
+    box-sizing: border-box; /* Asegura que el padding y el border sean incluidos en el tamaño total */
 }
-/*  Define estilos que sólo se aplican cuando la ventana
-    tiene un ancho mínimo de 768 píxeles. */
+
+/* Define el estilo visual del cuerpo del documento */
+body {
+    font-size: 2rem; /* Establece un tamaño de fuente más grande */
+    font-family: "Pangolin", cursive; /* Tipo de fuente para el texto */
+    background: linear-gradient(to top, var(--color6) 0%, var(--color1) 100%); /* Fondo degradado de abajo hacia arriba */
+}
+
+/* Asegura que todos los elementos tengan un comportamiento uniforme */
+*, *:before, *:after {
+    box-sizing: inherit; /* Hereda el box-sizing del elemento html */
+}
+
+/* Formato para los elementos en el header */
+header a, header p {
+    display: block; /* Hace que los enlaces y párrafos ocupen el ancho completo */
+    text-align: center; /* Centra el texto */
+    color: var(--color2); /* Color del texto en el header */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-size: 4rem; /* Tamaño de fuente grande */
+    font-weight: 700; /* Texto en negrita */
+    padding: 1rem; /* Espaciado interno */
+}
+
+/* Cambia de color en hover (cuando el cursor pasa sobre el elemento) */
+header a:hover {
+    color: var(--color3); /* Cambia el color del texto en hover */
+}
+
+/* Navegación Principal */
+.subtitulo {
+    background-color: var(--color4); /* Color de fondo para la sección de subtítulos */
+}
+
+/* Estilo para la navegación */
+.navegador {
+    display: flex; /* Usa flexbox para el layout */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+/* Define estilos para pantallas más anchas */
 @media (min-width: 768px) {
     .navegador {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: row; /* Cambia a fila para pantallas más grandes */
+        justify-content: space-between; /* Espacia los elementos uniformemente */
     }
 }
-/* Le da formato a la tiqueta a */
+
+/* Formato para los enlaces de navegación */
 .navegador a {
-    display: block;
-    text-align: center;
-    color: var(--color1);
-    text-decoration: none; /* Quita lo subrallado */
-    font-size: 2rem;
-    font-weight: 700; /* Para que el texto sea más grueso. */
-    padding: 1rem;
+    display: block; /* Hace que los enlaces ocupen el ancho completo */
+    text-align: center; /* Centra el texto */
+    color: var(--color1); /* Color de texto para enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 2rem; /* Tamaño de fuente mediano */
+    font-weight: 700; /* Texto en negrita */
+    padding: 1rem; /* Espaciado interno */
 }
-/* Cambia de color de letra y fondo al momento de pasar el cursor */
+
+/* Cambia de color en hover (cuando el cursor pasa sobre el enlace) */
 .navegador a:hover {
-    background-color: var(--color3);
-    color: var(--color2);
+    background-color: var(--color3); /* Cambia el color de fondo en hover */
+    color: var(--color2); /* Cambia el color del texto en hover */
 }
-/* contenido */
-/*  define un contenedor que tiene un ancho máximo de 1200px
-    y que está centrado horizontalmente en la página */
+
+/* Estilo para el contenedor de contenido */
 .contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
+    max-width: 120rem; /* Máximo ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
-/* Crea una sombra un relleno interno generoso y esquinas redondeadas */
+
+/* Sombra y espaciado para contenedores */
 .sombra {
-    box-shadow: 0 5px 15px 0 rgba(112,112,112,0.48);
-    background-color: var(--color1);
-    padding: 2rem;
-    border-radius: 1rem;
+    box-shadow: 0 5px 15px 0 rgba(112,112,112,0.48); /* Sombra externa */
+    background-color: var(--color1); /* Color de fondo del contenedor */
+    padding: 2rem; /* Espaciado interno */
+    border-radius: 1rem; /* Bordes redondeados */
 }
-/*  Fotos y videos  */
-/*  Crea una cuadricula para los campos en su interior. */
-.Fotos_y_videos{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    /*
-        repeat(auto-fill,...) = Crea tantas columnas como quepan en el contenedor.
-        minmax(150px, 1fr) =    Significa que cada columna tendrá un tamaño mínimo de 150 píxeles,
-                                las columnas se ajusten dinámicamente al ancho del contenedor.
-     */
-    gap: 10px; /* Establece un espacio entre filas y columnas de la cuadrícula. */
+img, video {
+    max-width: 100%; /* Los elementos multimedia no exceden el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes/videos */
+    border-radius: 8px; /* Bordes redondeados */
 }
-img, video{
-    width: 100%;
-    height: auto    ;
-    border-radius: 8px;
-}
-/* Cambia de tamaño al momento de pasar el cursor */
-img:hover {
-    transform: scale(200%);
-}
-video:hover {
-    transform: scale(200%);
-}
+
 /* Footer */
 /* Alinea el texto en el centro */
 .footer {
-    text-align: center;
+    text-align: center; /* Centra el texto en el footer */
 }
-/* Le da tamaño a al etiqueta p */
+
+/* Tamaño específico para los párrafos en el footer */
 .footer p {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Tamaño de fuente moderado */
 }

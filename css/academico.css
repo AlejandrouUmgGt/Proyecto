@@ -1,33 +1,69 @@
-main fieldset{
-    border: var(--color4) solid 10px;
-    display: flex;
-    align-items: flex-start;
+/* Estilos para el elemento main que incluye fieldset */
+main fieldset {
+    border: var(--color4) solid 10px; /* Aplica un borde con color y grosor definido */
 }
-main legend{
-    padding: 1rem;
-    background-color: var(--color3);
-    font-size: 4rem;
-    color: var(--color2);
+
+/* Estilos para el elemento section */
+section {
+    flex-direction: row; /* Configura la dirección del flujo de los elementos */
+    justify-content: space-between; /* Espacia los elementos de manera equitativa */
 }
-main div.text {
-    flex: 1; /* Permite que el texto ocupe el espacio restante */
+
+/* Estilos responsivos para pantallas más anchas */
+@media (min-width: 768px) {
+    section {
+        display: grid; /* Activa el modelo de diseño de cuadrícula */
+        grid-template-columns: 70% 30%; /* Define el ancho de las columnas */
+        grid-template-rows: repeat(1, 1fr); /* Define una fila que ocupa todo el disponible */
+        height: 100%; /* Define la altura al 100% del contenedor */
+        width: 100%; /* Define el ancho al 100% del contenedor */
+    }
 }
-main h2{
-    color: var(--color2);
-    padding-left: 3rem;
+
+/* Estilos para la leyenda en el fieldset */
+main legend {
+    padding: 1rem; /* Espaciado interno alrededor del texto */
+    background-color: var(--color3); /* Color de fondo para la leyenda */
+    font-size: 4rem; /* Establece el tamaño de fuente */
+    color: var(--color2); /* Aplica color al texto de la leyenda */
 }
-main strong{
-    font-size: 1.5rem;
-    color: var(--color8);
+
+/* Estilos para un div con clase 'texto' */
+main div .texto {
+    text-align: justify; /* Justifica el texto para un alineamiento uniforme */
 }
-main p{
-    padding-left: 7rem;
-    color: var(--color2);
+
+/* Estilos para el encabezado h2 */
+main h2 {
+    color: var(--color2); /* Aplica color al texto del encabezado */
+    padding-left: 3rem; /* Espaciado interno a la izquierda */
 }
-main ul{
-    padding-left: 12rem;
+
+/* Estilos para elementos strong */
+main strong {
+    font-size: 1.5rem; /* Establece el tamaño de fuente */
+    color: var(--color8); /* Aplica color al texto */
 }
-main div.imagen{
-    max-width: 15%; /* Asegura que la imagen no exceda el ancho del contenedor */
-    height: 15%; /* Mantiene la relación de aspecto */
+
+/* Estilos para párrafos */
+main p {
+    padding-left: 7rem; /* Espaciado interno a la izquierda */
+    color: var(--color2); /* Aplica color al texto del párrafo */
+}
+
+/* Estilos para listas no ordenadas */
+main div ul {
+    padding-left: 12rem; /* Espaciado interno a la izquierda */
+}
+
+/* Estilos para div con clase 'imagen' */
+main div.imagen {
+    display: flex; /* Usa flexbox para el posicionamiento */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilos para fieldset */
+fieldset {
+    margin-bottom: 3rem; /* Añade espaciado inferior entre fieldsets */
 }
