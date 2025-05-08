@@ -94,6 +94,12 @@ header a:hover {
     padding: 2rem; /* Espaciado interno */
     border-radius: 1rem; /* Bordes redondeados */
 }
+.ordenar {
+    display: grid; /* Activa el modelo de diseño de cuadrícula */
+    grid-template-rows: repeat(4, 1fr); /* Define una fila que ocupa */
+    height: 100%; /* Define la altura al 100% del contenedor */
+    width: 100%; /* Define el ancho al 100% del contenedor */
+}
 img, video {
     max-width: 100%; /* Los elementos multimedia no exceden el ancho de su contenedor */
     height: auto; /* Mantiene la proporción de las imágenes/videos */
