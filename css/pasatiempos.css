@@ -1,0 +1,15 @@
+h1{
+    color: var(--color7);
+}
+div.pasatiempos{
+    padding-left: 5rem;
+    display: grid; /* Activa el modelo de diseño de cuadrícula */
+    grid-template-columns: 7% 93%; /* Define el ancho de las columnas */
+    grid-template-rows: repeat(6, 1fr); /* Define una fila que ocupa todo el disponible */
+    height: 100%; /* Define la altura al 100% del contenedor */
+    width: 100%; /* Define el ancho al 100% del contenedor */
+}
+div.pasatiempos img{
+    width: auto;
+    height: 5rem;
+}
