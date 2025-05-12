@@ -1,0 +1,23 @@
+h1,h2,h3{
+    color: var(--color7);
+}
+p{
+    padding-left: 5rem;
+}
+.Fotos_y_videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Crea un grid responsivo */
+    gap: 10px;
+}
+
+img, video{
+    width: 100%;
+    height: auto    ;
+    border-radius: 8px;
+}
+img:hover {
+    transform: scale(200%);
+}
+video:hover {
+    transform: scale(200%);
+}
