@@ -13,3 +13,6 @@ img{
 p.porque{
     padding-left: 3rem;
 }
+strong{
+    color: var(--color7);
+}
