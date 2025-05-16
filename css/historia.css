@@ -16,9 +16,14 @@ img, video{
     height: auto    ;
     border-radius: 8px;
 }
+div.videop{
+    z-index: 2;
+}
 img:hover {
     transform: scale(200%);
+    z-index: 2;
 }
 video:hover {
     transform: scale(200%);
+    z-index: 2;
 }
