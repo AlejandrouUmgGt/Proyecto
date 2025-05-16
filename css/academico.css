@@ -17,6 +17,7 @@ section {
         grid-template-rows: repeat(1, 1fr); /* Define una fila que ocupa todo el disponible */
         height: 100%; /* Define la altura al 100% del contenedor */
         width: 100%; /* Define el ancho al 100% del contenedor */
+        gap: 2rem 0; /* Espacio entre filas */
     }
 }
 
@@ -66,4 +67,7 @@ main div.imagen {
 /* Estilos para fieldset */
 fieldset {
     margin-bottom: 3rem; /* Añade espaciado inferior entre fieldsets */
+}
+.RESALTAR{
+    color: var(--color7);
 }
