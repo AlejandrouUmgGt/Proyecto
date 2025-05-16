@@ -9,6 +9,8 @@
     --color7: #FFA500; /* Color naranja */
     --color8: #4CAF50; /* Color verde */
     --color9: #26A69A; /* Color verde azulado */
+    --color10: #18171c; /* Color azul negruzco */
+    --color11: #ff0000; /* Color rojo */
 }
 
 /* Establece un tamaño de fuente base para facilitar el uso de unidades rem */
@@ -16,7 +18,6 @@ html {
     font-size: 62.5%; /* 1rem equivale a 10px */
     box-sizing: border-box; /* Asegura que el padding y el border sean incluidos en el tamaño total */
 }
-
 /* Define el estilo visual del cuerpo del documento */
 body {
     font-size: 2rem; /* Establece un tamaño de fuente más grande */
