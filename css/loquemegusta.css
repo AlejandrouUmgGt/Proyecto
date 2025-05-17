@@ -1,0 +1,44 @@
+h1{
+    color: var(--color7);
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.listaper {
+    list-style: none;
+    padding-left: 2rem;
+    color: var(--color5 );
+}
+.listaper li {
+    position: relative;
+    margin: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    padding-left: 16rem;
+    font-size: 3rem;
+}
+.listaper li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5rem;
+    width: 15rem;
+    height: 15rem;
+    background-position: center;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+}
+.listaper li.img1::before {
+    background-image: url('https://cdn2.steamgriddb.com/logo_thumb/e6a2c4d36d6a52cadca1dfeca545afb0.png');
+}
+.listaper li.img2::before {
+    background-image: url('../icon/moto.svg');
+}
+.listaper li.img3::before {
+    background-image: url('../icon/ajedrez.svg');
+}
+.listaper li.img4::before {
+    background-image: url('../icon/rack.svg');
+}
+.listaper li.img5::before {
+    background-image: url('../icon/atuo.svg');
+}
