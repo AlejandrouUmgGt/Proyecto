@@ -51,7 +51,14 @@ main p {
     padding-left: 7rem; /* Espaciado interno a la izquierda */
     color: var(--color2); /* Aplica color al texto del párrafo */
 }
-
+/* Estilos para enlaces */
+main a{
+    color: var(--color7); /* Color de texto para enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+}
+main a:hover {
+    color: var(--color8);
+}
 /* Estilos para listas no ordenadas */
 main div ul {
     padding-left: 12rem; /* Espaciado interno a la izquierda */
