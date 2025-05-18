@@ -58,6 +58,7 @@ main a{
 }
 main a:hover {
     color: var(--color8);
+
 }
 /* Estilos para listas no ordenadas */
 main div ul {
