@@ -4,8 +4,13 @@ main{
 h1{
     color: var(--color7);
 }
-a{
-    text-decoration: none;
+main a{
+    color: var(--color7); /* Color de texto para enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+}
+main a:hover {
+    color: var(--color8);
+
 }
 strong{
     color: var(--color8);
