@@ -108,6 +108,14 @@ header a:hover {
     height: 100%; /* Define la altura al 100% del contenedor */
     width: 100%; /* Define el ancho al 100% del contenedor */
 }
+a{
+    color: var(--color7); /* Color de texto para enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 4rem; /* Tamaño de fuente grande */
+}
+a:hover {
+    color: var(--color8);
+}
 img, video {
     max-width: 100%; /* Los elementos multimedia no exceden el ancho de su contenedor */
     height: auto; /* Mantiene la proporción de las imágenes/videos */
